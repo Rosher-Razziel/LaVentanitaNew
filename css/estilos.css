@@ -1,0 +1,250 @@
+#cont_productos {
+  overflow:scroll;
+  height: 90%;
+}
+#cont_productos tr{
+  cursor: pointer;
+}
+#contCategorias, #contProveedores, #cont_productos {
+	overflow:scroll;
+  height: 80vh;
+	width: 73vw;
+}
+#cont_productos_fiados{
+  overflow:scroll;
+  height: 88vh;
+	width: 73vw;
+}
+#corteCajaContenido{
+	overflow:scroll;
+  height: 88vh;
+	width: 73vw;
+}
+
+/*ESTILOS DE LA FOTO PRA VSUALIZAR*/
+.prevPhoto {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  height: 150px;
+  border: 1px solid #CCC;
+  position: relative;
+  cursor: pointer;
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+}
+.prevPhoto label{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.prevPhoto img{
+  width: 100%;
+  height: 100%;
+}
+.upimg, .notBlock{
+  display: none !important;
+}
+.errorArchivo{
+  font-size: 16px;
+  font-family: arial;
+  color: #cc0000;
+  text-align: center;
+  font-weight: bold; 
+  margin-top: 10px;
+}
+.delPhoto{
+  color: #FFF;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 10;
+}
+#tbl_list_productos img{
+  width: 50px;
+}
+.imgProductoDelete{
+  width: 175px;
+}
+/*CODIGO ESTULOS*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #E0E4E5;
+	font-family: 'Open Sans', sans-serif;
+}
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #E84C3D;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.ct_item-active{
+	background: #2D3E50;
+}
+/* PRODUCTOS ============*/
+.products-list{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.products-list .product-item{
+	width: 23%;
+	margin-left: 2%;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	transition: all .4s;
+}
+.products-list .product-item img{
+	width: 100%;
+ 	height: 247px;
+}
+.acciones{
+	display: block;
+	width: 100%;
+	background: #ffffff;
+	color: #fff;
+	text-align: center;
+  	padding: 9px 0;
+}
+.tituloProductos{
+  	display: block;
+	width: 100%;
+ 	height: 64px;
+	padding: 8px 0 8px 10px;
+	background: #f1a428;
+	color: #fff;
+  	/* font-size: 13px; */
+  	text-align: center;
+}
+#abajo{
+	position: relative;
+   }
+.sobre {
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:none;
+	/* top:10%; */
+   }
+.tituloProductosAgotado{
+	display: block;
+  width: 100%;
+   height: 64px;
+  padding: 8px 0 8px 10px;
+  background: red;
+  color: #fff;
+	/* font-size: 13px; */
+	text-align: center;
+}
+.colorPzas{
+	color: red;
+}
+.products-list .product-item p{
+	display: block;
+	width: 90%;
+	/* padding: 8px 0; */
+	margin-left: 9px;
+	background: #ffffff;
+	color: #000;
+	text-align: left;
+	text-decoration: none;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+@media screen and (max-width: 900px){
+	.products-list{
+		width: 100%;
+	}
+ 	.category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 700px){
+	.category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 600px){
+	.products-list .product-item{
+		width: 47.5%;
+	}
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
