@@ -9,7 +9,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-8 mt-2">
-        <button type="button" class="btn btn-primary mt-1 pt-1 pl-2 pb-1 pr-2 nuevoProducto" data-toggle="modal" data-target=".producto">
+        <button type="button" class="btn btn-primary mt-1 pt-1 pl-2 pb-1 pr-2 nuevoProducto" id="nuevoProducto" data-toggle="modal" data-target=".producto">
           Nuevo
           <i class="fas fa-plus-square"></i>
         </button>
@@ -36,24 +36,6 @@
           <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
         </form>
       </div>
-      <!-- <div class="col-md-12 mt-4 table-responsive">
-        <table class="table table-hover table-striped" id="contenidoProductos">
-            <thead>
-              <tr class="table-info">
-                <th scope="col" class="text-center" width="10%">Acciones</th>
-                <th scope="col" class="text-center" width="5%">Foto</th>
-                <th scope="col" class="text-center">Codigo de Barras</th>
-                <th scope="col" class="text-center">Producto</th>
-                <th scope="col" class="text-center">Precio de Compra</th>
-                <th scope="col" class="text-center">Existencia</th>
-                <th scope="col" class="text-center">Precio de Venta</th>
-                <th scope="col" class="text-center">Categoria</th>
-                <th scope="col" class="text-center">Proveedor</th>
-              </tr>
-            </thead>
-            <tbody id="productos"></tbody>
-          </table>
-      </div> -->
       <div class="wrap">
         <h1>Catalogo de Productos</h1>
         <div class="store-wrapper">
